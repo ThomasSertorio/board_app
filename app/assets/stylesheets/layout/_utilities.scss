@@ -14,8 +14,14 @@
 .bg-black {
   background: #4a4a4a;
 }
+.bg-white {
+  background: white;
+}
 .bg-grey {
   background: #aeaeae;
+}
+.bg-light-grey {
+  background: $gray-lighter;
 }
 .bg-blue {
   background: #00a3e1;

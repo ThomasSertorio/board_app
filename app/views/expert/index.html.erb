@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <h1>Les Experts de la Loge du 10<sup>ème</sup></h1>
+    <% @experts.each do |expert| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="expert_card">
+          <img src="<%= expert.avatar_url %>" class="expert_card-avatar" alt="<%= expert.name %>">
+          <h2><%= expert.name %></h2>
+          <p><%= expert.tagline %></p>
+          <div class="expert_card-services_tags">
+            <% expert.services.each do |service| %>
+              <div class="expert_card-services_tags-tag"><%= service.name %></div>
+            <% end %>
+          </div>
+          <div class="expert_card-info"><p><%= expert.description %></p></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

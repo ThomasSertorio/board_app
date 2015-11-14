@@ -1,0 +1,26 @@
+.expert_card {
+  background-color: white;
+  border-radius: $border-radius-base;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 1px 1px 1px #C8C8C8;
+  &-info {
+    text-align:justify;
+  }
+  &-avatar{
+    height: 150px;
+  }
+  &-services_tags{
+    text-align: left;
+    margin-bottom: 1em;
+    height: 50px;
+    &-tag{
+      background-color: $gray-lighter;
+      font-size: 14px;
+      padding: 2px 5px;
+      margin-bottom: 2px;
+      display: inline-block;
+    }
+  }
+}

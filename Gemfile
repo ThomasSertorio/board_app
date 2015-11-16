@@ -21,6 +21,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-classnames'
 end
 
+# gem for markdown
+gem 'marked-rails'
 
 group :development, :test do
   gem 'binding_of_caller'

@@ -6,6 +6,13 @@ class ExpertController < ApplicationController
 
   end
 
+  def show
+    @expert = Expert.find(params[:id])
+    @service = params[:service_selected]
+    @comments = Comment.all
+
+  end
+
   private
 
   def proposed_services(experts_list)

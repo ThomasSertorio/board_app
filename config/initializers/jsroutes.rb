@@ -5,7 +5,9 @@ JsRoutes.setup do |config|
   #       $ rake tmp:cache:clear
   #       before restarting your `rails s`.
   config.include = [
-    /^expert_index$/
-
+    /^expert_index$/,
+    /^expert$/,
+    /^comment_index$/,
+    /^save_comment_index$/
   ]
 end

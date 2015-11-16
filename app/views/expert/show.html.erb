@@ -1,0 +1,9 @@
+<h1><%= @expert.name %></h1>
+
+<p>le service est <%= @service %></p>
+
+<% @comments.each do |comment| %>
+  <%= comment.content %>
+<% end %>
+
+<%= react_component "CommentBox" %>

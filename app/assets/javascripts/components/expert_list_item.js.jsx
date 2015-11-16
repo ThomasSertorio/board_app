@@ -2,6 +2,8 @@ var ExpertListItem = React.createClass({
 
   render: function() {
 
+
+    var expert_id = this.props.expert.id;
     var service_selected = (this.props.selected_service != null) ? this.props.selected_service : null;
     if (service_selected) {
       return (
@@ -17,6 +19,7 @@ var ExpertListItem = React.createClass({
               }
             </div>
             <div className="expert_card-info"><p>Tarif </p>{this.props.expert.selected_service.cost}</div>
+            <a href={Routes.expert_path(expert_id, {service_selected})}>En savoir +</a>
           </div>
         </div>
       );
@@ -35,6 +38,7 @@ var ExpertListItem = React.createClass({
               }
             </div>
             <div className="expert_card-info">{this.props.expert.description}</div>
+            <a href={Routes.expert_path(expert_id)} >En savoir +</a>
           </div>
         </div>
       );

@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
   root to: 'expert#index'
-  resources :expert, only: [:index]
+  resources :comment, only: [:index] do
+    collection do
+      post 'save'
+    end
+  end
+
+  resources :expert, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

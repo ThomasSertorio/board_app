@@ -114,3 +114,12 @@ lea_menage = Service.create(
   description: "besoin d'un ménage d'après soirée? d'un grand ménage de printemps?'",
   cost: "12€ / h",
   expert: lea )
+
+
+data = [
+  {author: "Pete Hunt", content: "This is one comment"},
+  {author: "Jordan Walke", content: "This is *another* comment"}
+];
+Comment.create(data)
+
+

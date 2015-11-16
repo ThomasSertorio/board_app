@@ -1,4 +1,4 @@
-json.extract! expert, :name, :tagline, :avatar_url, :description
+json.extract! expert, :name, :tagline, :avatar_url, :description, :id
 json.services do
   json.array! expert.services
 end
